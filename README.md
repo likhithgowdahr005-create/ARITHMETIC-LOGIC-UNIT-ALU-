@@ -83,7 +83,7 @@ Power, timing, area, and gate-level reports are available in the **Synthesis_Rep
 ## 📄 Project Report
 
 📥 **Download Full Report:**  
-[ALU Simulation Report (PDF)](Project_Report/ALU_SimulationReport.pdf)
+[ALU Simulation Report (PDF)](Project_Report/ALU_Simulation Report.pdf)
 
 ---
 
