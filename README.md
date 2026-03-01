@@ -11,11 +11,9 @@
 
 ## 📌 Project Overview
 
-This project presents the design and simulation of a 4-bit Arithmetic Logic Unit (ALU) using Verilog Hardware Description Language (HDL). The ALU is a key component in digital systems and microprocessors responsible for performing arithmetic and logical operations.
+This project presents the design and simulation of a 4-bit Arithmetic Logic Unit (ALU) using Verilog Hardware Description Language (HDL). The ALU is an essential component of digital systems responsible for performing arithmetic and logical operations.
 
-The implemented ALU supports five operations: Addition, Subtraction, AND, OR, and NOT. A 3-bit select signal determines which operation is performed on the input operands. The design is verified using simulation and synthesized using Cadence Genus to analyze hardware performance including power, timing, and area utilization.
-
-This project demonstrates the complete VLSI design flow from coding and simulation to synthesis and report analysis.
+The implemented ALU supports five operations: Addition, Subtraction, AND, OR, and NOT. A 3-bit select signal determines the operation performed on the input operands. The design is verified using simulation and synthesized using Cadence Genus to evaluate hardware performance such as power, timing, and area utilization.
 
 ---
 
@@ -24,8 +22,7 @@ This project demonstrates the complete VLSI design flow from coding and simulati
 - Design a combinational ALU using Verilog HDL  
 - Implement arithmetic and logical operations  
 - Verify functionality using simulation waveform  
-- Perform synthesis and analyze hardware performance  
-- Understand practical VLSI design methodology  
+- Perform synthesis and analyze performance metrics  
 
 ---
 
@@ -37,17 +34,27 @@ This project demonstrates the complete VLSI design flow from coding and simulati
 
 ---
 
+## 💻 Source Code
+
+### 🔹 ALU Design (`alu.v`)
+Implements arithmetic and logical operations using two 4-bit inputs and a 3-bit select signal. A case statement performs addition, subtraction, AND, OR, and NOT operations and produces a 4-bit result.
+
+### 🔹 Testbench (`alu_tb.v`)
+Applies different input combinations to verify ALU functionality and generates simulation waveforms.
+
+Source files are available in the **Source_Code** folder.
+
+---
+
 ## 🧮 ALU Operation Table
 
-| Select (sel) | Operation |
-|--------------|-----------|
+| Select | Operation |
+|---|---|
 | 000 | Addition |
 | 001 | Subtraction |
 | 010 | AND |
 | 011 | OR |
 | 100 | NOT |
-
-The select signal controls the operation performed by the ALU and produces the corresponding output.
 
 ---
 
@@ -55,31 +62,31 @@ The select signal controls the operation performed by the ALU and produces the c
 
 ![Waveform](Simulation_Output/waveform.png)
 
-The waveform above verifies the functional behavior of the ALU. Different input combinations were applied through a testbench, and the output changes according to the selected operation, confirming correct implementation.
+The waveform verifies correct ALU behavior for different input combinations.
 
 ---
 
-## 🔧 RTL Schematic (Synthesis View)
+## 🔧 RTL Schematic
 
 ![RTL Design](RTL_Design/rtl.png)
 
-The RTL schematic represents the synthesized hardware structure generated from the Verilog code. It illustrates the internal logic elements and confirms successful synthesis of the ALU design.
+The RTL view shows the synthesized hardware structure generated from the Verilog design.
 
 ---
 
 ## 📊 Synthesis Reports
 
-Power, timing, area, and gate-level reports are available inside the **Synthesis_Reports** folder.
+Power, timing, area, and gate-level reports are available in the **Synthesis_Reports** folder.
 
 ---
 
 ## 📄 Project Report
 
-📥 **Download Full Simulation Report:**  
+📥 **Download Full Report:**  
 [ALU Simulation Report (PDF)](Project_Report/ALU_Simulation_Report.pdf)
 
 ---
 
 ## ✅ Results
 
-Simulation confirms correct execution of all arithmetic and logical operations. Synthesis analysis demonstrates efficient hardware utilization with acceptable power consumption and timing performance. The design successfully meets both functional and structural requirements.
+Simulation confirms correct execution of all operations. Synthesis analysis shows efficient hardware utilization with acceptable power and timing performance.
